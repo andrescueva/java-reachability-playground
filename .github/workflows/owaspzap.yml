@@ -4,7 +4,8 @@ on:
 
 jobs:
   zap_scan:
-    permissions: read|write
+    permissions:
+     actions: read|write
     runs-on: ubuntu-latest
     name: Scan the webapplication
     steps:
