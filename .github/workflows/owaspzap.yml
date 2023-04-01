@@ -1,8 +1,9 @@
 name: OWASP ZAP
-on: [push]
+on: [workflow_run]
 
 jobs:
   zap_scan:
+    permissions: read,write
     runs-on: ubuntu-latest
     name: Scan the webapplication
     steps:
